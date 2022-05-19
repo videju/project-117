@@ -1,32 +1,63 @@
-#score{
-    margin-left: 5px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-#timer{
-    float: right;
-    margin-right: 5px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
 body{
-    background-color: rgb(46, 49, 42);
+    background: linear-gradient(#764AF1,#F2F2F2) ;
 }
-h1{
-    background-color: cornsilk;
-    color: rgb(62, 85, 70);
-    font-family: 'Oswald', sans-serif;
+
+#btnC{
+    border-radius: 20%;
+    font-size: 1rem;
 }
-#show_sketch{
-    float: right;
+#btnC:hover{
+    margin-top: 100px;
+    border-radius: 5%;
+    background-color: azure;
+    color:#764AF1 ;
+    font-size: 1rem;
+    transition: 0.4s;
 }
 p{
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    color:#F2F2F2 ;
+    font-size: 1.5rem;
 }
-#sketch_to_be_drawn{
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    color: red;
+p:hover{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+h1{
+    color: #fff;
+}
+span img{
+    width:10vw;
+    border-radius: 25%;
+
+}
+
+#show_sketch{
+    position: fixed;
+   
+    
+}
+#show_sketch:hover{
+    border-radius: 5%;
+    background-color: azure;
+    color:#764AF1 ;
+  
+    transition: 0.4s;
+}
+#image{
+    width: 15vw ;
+    height: 15vh;
+}
+/* code from now */
+canvas
+{
+    border:5px solid white;
+    border-radius: 20px;
+    animation-name: example;
+    animation-duration: 4s ;
+    margin-top: 50px;
+   animation-iteration-count: infinite;
+}
+@keyframes example{
+    from{box-shadow: 1px 1px 38px grey}
+    to {box-shadow: 1px 1px 38px white;}
 }
